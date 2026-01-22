@@ -1,243 +1,332 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raya the Corgi | Официален Сайт</title>
-    <meta name="description" content="Запознайте се с Raya - най-забавното и игриво корги! Научете за нейния характер, разгледайте галерията и прочетете забавни факти.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO / Social Sharing -->
-    <meta name="robots" content="index,follow">
-    <meta name="theme-color" content="#E89556">
-    <link rel="canonical" href="https://rayathecorgi.eu/">
-    <link rel="alternate" hreflang="bg" href="https://rayathecorgi.eu/">
-    <link rel="alternate" hreflang="en" href="https://rayathecorgi.eu/en/">
+  <!-- Title & Description -->
+  <title>Raya the Corgi | Най-щастливото корги в интернет</title>
+  <meta name="description" content="Запознайте се с Raya – най-забавното и игриво корги! Галерия, забавни факти и много корги настроение.">
 
-    <meta property="og:title" content="Raya the Corgi | Официален Сайт">
-    <meta property="og:description" content="Запознайте се с Raya - най-забавното и игриво корги! Разгледайте галерията и прочетете забавни факти.">
-    <meta property="og:image" content="https://rayathecorgi.eu/images/seo-banner.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://rayathecorgi.eu/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="bg_BG">
+  <!-- SEO -->
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#E89556">
+  <link rel="canonical" href="https://rayathecorgi.eu/">
+  <link rel="alternate" hreflang="bg" href="https://rayathecorgi.eu/">
+  <link rel="alternate" hreflang="en" href="https://rayathecorgi.eu/en/">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Raya the Corgi | Официален Сайт">
-    <meta name="twitter:description" content="Запознайте се с Raya - най-забавното и игриво корги! Разгледайте галерията и прочетете забавни факти.">
-    <meta name="twitter:image" content="https://rayathecorgi.eu/images/seo-banner.jpg">
+  <!-- Open Graph (Facebook, Viber, Messenger) -->
+  <meta property="og:title" content="Raya the Corgi | Най-щастливото корги в интернет">
+  <meta property="og:description" content="Запознайте се с Raya – най-забавното и игриво корги! Разгледайте галерията и прочетете забавни факти.">
+  <meta property="og:image" content="https://rayathecorgi.eu/images/seo-banner.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://rayathecorgi.eu/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="bg_BG">
+  <meta property="og:site_name" content="Raya the Corgi">
+  <!-- ✅ Добавка: alt за OG image -->
+  <meta property="og:image:alt" content="Raya the Corgi – най-щастливото корги в интернет">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Raya the Corgi | Най-щастливото корги в интернет">
+  <meta name="twitter:description" content="Запознайте се с Raya – най-забавното и игриво корги!">
+  <meta name="twitter:image" content="https://rayathecorgi.eu/images/seo-banner.jpg">
     
-    <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Performance: preload critical assets -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" as="image" href="images/raya-hero.jpg" fetchpriority="high">
+  <!-- Performance: preload critical assets -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" as="image" href="images/raya-hero.jpg" fetchpriority="high">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "name": "Raya the Corgi",
-          "url": "https://rayathecorgi.eu/",
-          "inLanguage": "bg"
-        },
-        {
-          "@type": "Organization",
-          "name": "Raya the Corgi",
-          "url": "https://rayathecorgi.eu/",
-          "logo": "https://rayathecorgi.eu/images/logo.png"
-        }
-      ]
+  <!-- ✅ ДОБАВКА: sticky header + mobile hamburger вляво + back-to-top стил -->
+  <style>
+    /* Sticky header (залепен хедър) */
+    header{
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      background: #fff;
+      /* Лека сянка – ако style.css вече има, тази е деликатна */
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
-    </script>
+
+    /* Хамбургер на мобилно леко по-вляво (местим го от десния ръб навътре) */
+    @media (max-width: 768px) {
+      .hamburger-menu{
+        margin-right: 14px; /* 👈 това го мести вляво */
+      }
+    }
+
+    /* Back to top button */
+    #backToTop{
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #E89556; /* оранжево */
+      color: #fff;        /* бяла стрелка */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s ease, transform .25s ease, background .25s ease;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+      
+    }
+
+    #backToTop.show{
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    #backToTop:hover{
+      background: #d87f3e;
+      transform: translateY(-3px);
+    }
+
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Raya the Corgi",
+        "url": "https://rayathecorgi.eu/",
+        "inLanguage": "bg"
+      },
+      {
+        "@type": "Organization",
+        "name": "Raya the Corgi",
+        "url": "https://rayathecorgi.eu/",
+        "logo": "https://rayathecorgi.eu/images/logo.png"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-    <header>
-        <div class="container header-container">
-            <a href="/" class="logo" aria-label="Raya the Corgi">
-                <img src="images/logo.png" alt="Raya the Corgi Logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#about" data-i18n="nav.about"><i class="fas fa-heart" aria-hidden="true"></i> За Raya</a></li>
-                    <li><a href="#character" data-i18n="nav.character"><i class="fas fa-paw" aria-hidden="true"></i> Характер</a></li>
-                    <li><a href="#gallery" data-i18n="nav.gallery"><i class="fas fa-camera-retro" aria-hidden="true"></i> Галерия</a></li>
-                    <li><a href="#facts" data-i18n="nav.facts"><i class="fas fa-lightbulb" aria-hidden="true"></i> Факти</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="container header-container">
+      <a href="/" class="logo" aria-label="Raya the Corgi">
+        <img src="images/logo.png" alt="Raya the Corgi Logo">
+      </a>
 
-            <div class="lang-switch" aria-label="Language switcher">
-                <button class="lang-btn" type="button" data-lang="bg" aria-label="Български">BG</button>
-                <span class="lang-sep" aria-hidden="true">|</span>
-                <button class="lang-btn" type="button" data-lang="en" aria-label="English">EN</button>
-            </div>
+      <nav>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about"><i class="fas fa-heart" aria-hidden="true"></i> За Raya</a></li>
+          <li><a href="#character" data-i18n="nav.character"><i class="fas fa-paw" aria-hidden="true"></i> Характер</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery"><i class="fas fa-camera-retro" aria-hidden="true"></i> Галерия</a></li>
+          <li><a href="#facts" data-i18n="nav.facts"><i class="fas fa-lightbulb" aria-hidden="true"></i> Факти</a></li>
+        </ul>
+      </nav>
 
-            <a href="#about" class="btn btn-primary btn-header" data-i18n="cta.header">Запознай се! <i class="fas fa-bone" aria-hidden="true"></i></a>
-            <div class="hamburger-menu">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </div>
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn" type="button" data-lang="bg" aria-label="Български">BG</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <a href="#about" class="btn btn-primary btn-header" data-i18n="cta.header">Запознай се! <i class="fas fa-bone" aria-hidden="true"></i></a>
+
+      <div class="hamburger-menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="floating-elements">
+      <i class="fas fa-paw floating-paw paw-1"></i>
+      <i class="fas fa-paw floating-paw paw-2"></i>
+      <div class="floating-bubble bubble-1"></div>
+      <div class="floating-bubble bubble-2"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="welcome-badge">
+          <span data-i18n="hero.badge"><i class="fas fa-heart" aria-hidden="true"></i> Добре дошли в моя свят</span>
         </div>
-    </header>
-
-    <section id="hero">
-        <div class="floating-elements">
-            <i class="fas fa-paw floating-paw paw-1"></i>
-            <i class="fas fa-paw floating-paw paw-2"></i>
-            <div class="floating-bubble bubble-1"></div>
-            <div class="floating-bubble bubble-2"></div>
+        <h1 data-i18n="hero.title">Здравейте!<br>Аз съм <span>Raya</span></h1>
+        <p data-i18n="hero.subtitle">Най-щастливото и игриво Корги, което ще срещнете! Обичам приключения, гушкане и вкусни лакомства. <i class="fas fa-drumstick-bite" aria-hidden="true"></i></p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary" data-i18n="hero.btnAbout">Научи повече за мен <i class="fas fa-dog" aria-hidden="true"></i></a>
+          <a href="#gallery" class="btn btn-secondary" data-i18n="hero.btnGallery">Виж галерията <i class="fas fa-images" aria-hidden="true"></i></a>
         </div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="welcome-badge">
-                    <span data-i18n="hero.badge"><i class="fas fa-heart" aria-hidden="true"></i> Добре дошли в моя свят</span>
-                </div>
-                <h1 data-i18n="hero.title">Здравейте!<br>Аз съм <span>Raya</span></h1>
-                <p data-i18n="hero.subtitle">Най-щастливото и игриво Корги, което ще срещнете! Обичам приключения, гушкане и вкусни лакомства. <i class="fas fa-drumstick-bite" aria-hidden="true"></i></p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary" data-i18n="hero.btnAbout">Научи повече за мен <i class="fas fa-dog" aria-hidden="true"></i></a>
-                    <a href="#gallery" class="btn btn-secondary" data-i18n="hero.btnGallery">Виж галерията <i class="fas fa-images" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="hero-image-container">
-                <div class="hero-image-wrapper">
-                    <img src="images/raya-hero.jpg" alt="Raya the Corgi" class="hero-image" fetchpriority="high" decoding="async">
-                </div>
-                <div class="floating-btn float-1">
-                    <span data-i18n="hero.float1">Игриво! <i class="fas fa-table-tennis" aria-hidden="true"></i></span>
-                </div>
-                <div class="floating-btn float-2">
-                    <span data-i18n="hero.float2">Сладко! <i class="fas fa-kiss-wink-heart" aria-hidden="true"></i></span>
-                </div>
-                <div class="floating-btn float-3">
-                    <span data-i18n="hero.float3">Енергично! <i class="fas fa-bolt" aria-hidden="true"></i></span>
-                </div>
-            </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="hero-image-wrapper">
+          <img src="images/raya-hero.jpg" alt="Raya the Corgi" class="hero-image" fetchpriority="high" decoding="async">
         </div>
-        <a href="#about" class="scroll-down">
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
-        </a>
-    </section>
-
-    <section id="about">
-        <div class="container about-container">
-            <div class="about-content">
-                <h2 class="section-title" data-i18n="about.title">Коя е Raya? <i class="fas fa-question" aria-hidden="true"></i></h2>
-                <p data-i18n="about.p1">Аз съм кралска особа в тяло на малко, пухкаво хлебче! <i class="fas fa-bread-slice" aria-hidden="true"></i> Моят ден минава в стратегическо планиране как да получа повече лакомства и да бъда център на внимание.</p>
-                <p data-i18n="about.p2">Моята суперсила е да разтопявам сърца с един поглед и да правя най-смешните физиономии, когато спя. Обичам дългите разходки в парка (особено ако има локви) и да преследвам всичко, което се движи бързо.</p>
-                <ul class="about-list">
-                    <li data-i18n="about.li1"><i class="fas fa-check-circle" aria-hidden="true"></i> Професионален дегустатор</li>
-                    <li data-i18n="about.li2"><i class="fas fa-check-circle" aria-hidden="true"></i> Експерт по дрямка</li>
-                    <li data-i18n="about.li3"><i class="fas fa-check-circle" aria-hidden="true"></i> Майстор на "тъжния поглед"</li>
-                </ul>
-            </div>
-            <div class="about-image-collage" data-bg="images/raya-hero2.jpg" aria-label="Raya photo collage">
-                <div class="collage-item item-1"><i class="fas fa-crown" aria-hidden="true"></i></div>
-                <div class="collage-item item-2"><i class="fas fa-cookie" aria-hidden="true"></i></div>
-                <div class="collage-item item-3"><i class="fas fa-running" aria-hidden="true"></i></div>
-            </div>
+        <div class="floating-btn float-1">
+          <span data-i18n="hero.float1">Игриво! <i class="fas fa-table-tennis" aria-hidden="true"></i></span>
         </div>
-    </section>
-
-    <section id="character">
-        <div class="container">
-            <h2 class="section-title text-center" data-i18n="character.title">Моят Уникален Характер <i class="fas fa-star" aria-hidden="true"></i></h2>
-            <div class="character-grid">
-                <div class="char-card">
-                    <div class="char-icon"><i class="fas fa-bolt"></i></div>
-                    <h3 data-i18n="character.c1.t">Енергична Бомба</h3>
-                    <p data-i18n="character.c1.p">Винаги готова за игра! Мога да тичам след топката цял ден, а после да заспя за секунди на най-странното място.</p>
-                </div>
-                <div class="char-card">
-                    <div class="char-icon"><i class="fas fa-utensils"></i></div>
-                    <h3 data-i18n="character.c2.t">Вроден Гурме</h3>
-                    <p data-i18n="character.c2.p">Храната е моята страст. Имам вграден радар за отваряне на хладилници и пакетчета с лакомства.</p>
-                </div>
-                <div class="char-card">
-                    <div class="char-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                    <h3 data-i18n="character.c3.t">Гушкав Терапевт</h3>
-                    <p data-i18n="character.c3.p">Най-доброто лекарство за лош ден е една доза Raya-гушкане. Винаги усещам, когато имаш нужда от любов.</p>
-                </div>
-                <div class="char-card">
-                    <div class="char-icon"><i class="fas fa-theater-masks"></i></div>
-                    <h3 data-i18n="character.c4.t">Драма Кралица</h3>
-                    <p data-i18n="character.c4.p">Ако не ми обърнеш внимание за 5 минути, ще изиграя сцена достойна за Оскар. Обичам да съм под прожекторите!</p>
-                </div>
-            </div>
+        <div class="floating-btn float-2">
+          <span data-i18n="hero.float2">Сладко! <i class="fas fa-kiss-wink-heart" aria-hidden="true"></i></span>
         </div>
-    </section>
-
-    <section id="gallery">
-        <div class="container">
-            <h2 class="section-title text-center" data-i18n="gallery.title">Моите звездни моменти <i class="fas fa-camera" aria-hidden="true"></i></h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/gallery1.jpg" alt="Raya снимка 1" loading="lazy" decoding="async">
-                    <div class="gallery-overlay"><i class="fas fa-heart"></i></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery2.jpg" alt="Raya снимка 2" loading="lazy" decoding="async">
-                    <div class="gallery-overlay"><i class="fas fa-star"></i></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery3.jpg" alt="Raya снимка 3" loading="lazy" decoding="async">
-                    <div class="gallery-overlay"><i class="fas fa-sun"></i></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery4.jpg" alt="Raya снимка 4" loading="lazy" decoding="async">
-                    <div class="gallery-overlay"><i class="fas fa-smile-beam"></i></div>
-                </div>
-            </div>
+        <div class="floating-btn float-3">
+          <span data-i18n="hero.float3">Енергично! <i class="fas fa-bolt" aria-hidden="true"></i></span>
         </div>
-    </section>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </a>
+  </section>
 
-    <section id="facts">
-        <div class="container">
-            <h2 class="section-title text-center" data-i18n="facts.title">Забавни Корги факти <i class="fas fa-book-open" aria-hidden="true"></i></h2>
-            <div class="facts-container">
-                <div class="fact-card">
-                    <i class="fas fa-crown fact-icon"></i>
-                    <p data-i18n="facts.f1">Аз съм от породата, любима на кралица Елизабет II. Имам синя кръв!</p>
-                </div>
-                <div class="fact-card">
-                    <i class="fas fa-ruler-horizontal fact-icon"></i>
-                    <p data-i18n="facts.f2">Не съм ниска, просто съм по-близо до земята за по-добро подушване.</p>
-                </div>
-                <div class="fact-card">
-                    <i class="fas fa-volume-up fact-icon"></i>
-                    <p data-i18n="facts.f3">Моят лай е впечатляващо силен за размерите ми. Пазач номер едно!</p>
-                </div>
-                <div class="fact-card">
-                    <i class="fas fa-bed fact-icon"></i>
-                    <p data-i18n="facts.f4">Спя в поза "сплескана жаба" - с разперени задни крачета.</p>
-                </div>
-            </div>
+  <section id="about">
+    <div class="container about-container">
+      <div class="about-content">
+        <h2 class="section-title" data-i18n="about.title">Коя е Raya? <i class="fas fa-question" aria-hidden="true"></i></h2>
+        <p data-i18n="about.p1">Аз съм кралска особа в тяло на малко, пухкаво хлебче! <i class="fas fa-bread-slice" aria-hidden="true"></i> Моят ден минава в стратегическо планиране как да получа повече лакомства и да бъда център на внимание.</p>
+        <p data-i18n="about.p2">Моята суперсила е да разтопявам сърца с един поглед и да правя най-смешните физиономии, когато спя. Обичам дългите разходки в парка (особено ако има локви) и да преследвам всичко, което се движи бързо.</p>
+        <ul class="about-list">
+          <li data-i18n="about.li1"><i class="fas fa-check-circle" aria-hidden="true"></i> Професионален дегустатор</li>
+          <li data-i18n="about.li2"><i class="fas fa-check-circle" aria-hidden="true"></i> Експерт по дрямка</li>
+          <li data-i18n="about.li3"><i class="fas fa-check-circle" aria-hidden="true"></i> Майстор на "тъжния поглед"</li>
+        </ul>
+      </div>
+      <div class="about-image-collage" data-bg="images/raya-hero2.jpg" aria-label="Raya photo collage">
+        <div class="collage-item item-1"><i class="fas fa-crown" aria-hidden="true"></i></div>
+        <div class="collage-item item-2"><i class="fas fa-cookie" aria-hidden="true"></i></div>
+        <div class="collage-item item-3"><i class="fas fa-running" aria-hidden="true"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="character">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="character.title">Моят Уникален Характер <i class="fas fa-star" aria-hidden="true"></i></h2>
+      <div class="character-grid">
+        <div class="char-card">
+          <div class="char-icon"><i class="fas fa-bolt"></i></div>
+          <h3 data-i18n="character.c1.t">Енергична Бомба</h3>
+          <p data-i18n="character.c1.p">Винаги готова за игра! Мога да тичам след топката цял ден, а после да заспя за секунди на най-странното място.</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="container footer-content">
-            <p class="copyright">
-                <span data-i18n="footer.copy">Copyright © 2026 Всички права запазени | Изработен с много <i class="fas fa-heart heart-beat" aria-hidden="true"></i> от</span>
-                <a href="https://www.linkedin.com/in/tsvetelinpenkov/" target="_blank" rel="noopener noreferrer">Цветелин Пенков</a>
-            </p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/rayathecorgii" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            </div>
+        <div class="char-card">
+          <div class="char-icon"><i class="fas fa-utensils"></i></div>
+          <h3 data-i18n="character.c2.t">Вроден Гурме</h3>
+          <p data-i18n="character.c2.p">Храната е моята страст. Имам вграден радар за отваряне на хладилници и пакетчета с лакомства.</p>
         </div>
-    </footer>
+        <div class="char-card">
+          <div class="char-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3 data-i18n="character.c3.t">Гушкав Терапевт</h3>
+          <p data-i18n="character.c3.p">Най-доброто лекарство за лош ден е една доза Raya-гушкане. Винаги усещам, когато имаш нужда от любов.</p>
+        </div>
+        <div class="char-card">
+          <div class="char-icon"><i class="fas fa-theater-masks"></i></div>
+          <h3 data-i18n="character.c4.t">Драма Кралица</h3>
+          <p data-i18n="character.c4.p">Ако не ми обърнеш внимание за 5 минути, ще изиграя сцена достойна за Оскар. Обичам да съм под прожекторите!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js" defer></script>
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="gallery.title">Моите звездни моменти <i class="fas fa-camera" aria-hidden="true"></i></h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/gallery1.jpg" alt="Raya снимка 1" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><i class="fas fa-heart"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery2.jpg" alt="Raya снимка 2" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><i class="fas fa-star"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery3.jpg" alt="Raya снимка 3" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><i class="fas fa-sun"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery4.jpg" alt="Raya снимка 4" loading="lazy" decoding="async">
+          <div class="gallery-overlay"><i class="fas fa-smile-beam"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="facts">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="facts.title">Забавни Корги факти <i class="fas fa-book-open" aria-hidden="true"></i></h2>
+      <div class="facts-container">
+        <div class="fact-card">
+          <i class="fas fa-crown fact-icon"></i>
+          <p data-i18n="facts.f1">Аз съм от породата, любима на кралица Елизабет II. Имам синя кръв!</p>
+        </div>
+        <div class="fact-card">
+          <i class="fas fa-ruler-horizontal fact-icon"></i>
+          <p data-i18n="facts.f2">Не съм ниска, просто съм по-близо до земята за по-добро подушване.</p>
+        </div>
+        <div class="fact-card">
+          <i class="fas fa-volume-up fact-icon"></i>
+          <p data-i18n="facts.f3">Моят лай е впечатляващо силен за размерите ми. Пазач номер едно!</p>
+        </div>
+        <div class="fact-card">
+          <i class="fas fa-bed fact-icon"></i>
+          <p data-i18n="facts.f4">Спя в поза "сплескана жаба" - с разперени задни крачета.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p class="copyright">
+        <span data-i18n="footer.copy">Copyright © 2026 Всички права запазени | Изработен с много <i class="fas fa-heart heart-beat" aria-hidden="true"></i> от</span>
+        <a href="https://www.linkedin.com/in/tsvetelinpenkov/" target="_blank" rel="noopener noreferrer">Цветелин Пенков</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/rayathecorgii" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ ДОБАВКА: Back to top бутон -->
+  <button id="backToTop" type="button" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js" defer></script>
+
+  <!-- ✅ ДОБАВКА: Back to top логика (без конфликт със script.js) -->
+  <script>
+    (function () {
+      const btn = document.getElementById("backToTop");
+      if (!btn) return;
+
+      const toggleBtn = () => {
+        if (window.scrollY > 320) btn.classList.add("show");
+        else btn.classList.remove("show");
+      };
+
+      window.addEventListener("scroll", toggleBtn, { passive: true });
+      toggleBtn();
+
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    })();
+  </script>
 </body>
 </html>
+
